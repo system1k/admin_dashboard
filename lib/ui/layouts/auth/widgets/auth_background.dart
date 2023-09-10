@@ -5,18 +5,16 @@ class AuthBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return Container(
+      decoration: _buildBoxDecoration(),
       child: Container(
-        decoration: _buildBoxDecoration(),
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 400),
-          child: const Center(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 30),
-              child: Image(
-                image: AssetImage('twitter-white-logo.png'),
-                width: 400
-              )
+        constraints: const BoxConstraints(maxWidth: 400),
+        child: const Center(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 30),
+            child: Image(
+              image: AssetImage('twitter-white-logo.png'),
+              width: 400
             )
           )
         )

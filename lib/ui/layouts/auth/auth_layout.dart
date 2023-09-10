@@ -54,7 +54,9 @@ class _DesktopBody extends StatelessWidget {
       child: Row(
         children: [
 
-          const AuthBackground(),
+         const Expanded(
+          child: AuthBackground()
+         ),
 
           Container(
             width: 600,
