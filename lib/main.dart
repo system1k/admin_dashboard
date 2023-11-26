@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:admin_dashboard/services/services.dart';
-import 'package:admin_dashboard/routes/routes.dart';
 import 'package:admin_dashboard/providers/providers.dart';
+import 'package:admin_dashboard/routes/routes.dart';
+import 'package:admin_dashboard/services/services.dart';
 import 'package:admin_dashboard/ui/layouts/layouts.dart';
 
 void main() async {
@@ -21,10 +21,17 @@ class AppState extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+
         ChangeNotifierProvider(
           lazy: false,
           create: (_) => AuthProvider()
+        ),
+
+        ChangeNotifierProvider(
+          lazy: false,
+          create: (_) => SideMenuProvider()
         )
+
       ],
       child: const MyApp(),
     );

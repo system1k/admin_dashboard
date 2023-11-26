@@ -1,1 +1,1 @@
-export 'package:admin_dashboard/ui/inputs/custom_Inputs.dart';
+export 'package:admin_dashboard/ui/inputs/custom_inputs.dart';
